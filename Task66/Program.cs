@@ -17,5 +17,9 @@ int SumNumbers(int num1, int num2)
     return num1 += SumNumbers(num1 + 1, num2);
 }
 
-int result = SumNumbers(number1, number2);
-Console.WriteLine(result);
+if (number1 < number2)
+{
+    int result = SumNumbers(number1, number2);
+    Console.WriteLine(result);
+}
+Console.WriteLine("Число M должно быть меньше, чем N");
